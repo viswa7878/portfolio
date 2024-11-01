@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="script.css">
+
+  <script>
+    // Function to load the header using AJAX
+    function loadHeader() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'header.html', true); // Adjust the path to your header.html
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                document.getElementById('header-container').innerHTML = xhr.responseText;
+            } else {
+                console.error('Failed to load header:', xhr.status, xhr.statusText);
+            }
+        };
+        xhr.onerror = function() {
+            console.error('Request failed');
+        };
+        xhr.send();
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeader);
+</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <div class="content">
+      
+    <div class="content-sub1">
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>&nbsp;About Me
+            </div>
+            <div class="logo" style="display: flex;">
+              <img src="hero.png" alt="image" style="margin-right: 100px; border-radius: 20px; height:400px;width: 350px;">
+              
+              <div><h3 data-sr-id="16" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">I'm Jigar</h3>
+                <span class="tag" data-sr-id="17" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">Full Stack Developer</span>
+                <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">I am a Full-Stack developer based in Pune, India. 
+                  I am an Information Technology undergraduate from SPPU.
+                  I am very passionate about improving my coding skills &amp; developing applications &amp; websites.
+                  I build WebApps and Websites using MERN Stack.
+                  Working for myself to improve my skills.
+                  Love to build Full-Stack clones. </p>
+
+                  <div class="box-container" data-sr-id="21" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                    <!-- <div class="box">
+                      <p><span> age: </span> 20</p>
+                      <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+                    </div> -->
+                    <div class="box">
+                      <p data-sr-id="19" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;"><span> email : </span> jigarsable21@gmail.com</p>
+                      <p data-sr-id="20" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;"><span> place : </span> Pune, India - 412206</p>
+                    </div>
+                </div>
+
+                <div class="resumebtn" data-sr-id="22" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                  <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
+                      <i class="fas fa-chevron-right"></i>
+                  </a>
+              </div>
+              </div>
+          </div>
+          
+          <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+           <p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+<p>adadaada</p>
+
+
+      </div>
+      </div>
+     
+  
+</body>
+</html>
