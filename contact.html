@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="script.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load header via AJAX
+        function loadHeader() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'header.html', true); // Adjust the path to your header.html
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    document.getElementById('header-container').innerHTML = xhr.responseText;
+                } else {
+                    console.error('Failed to load header:', xhr.status, xhr.statusText);
+                }
+            };
+            xhr.onerror = function() {
+                console.error('Request failed');
+            };
+            xhr.send();
+        }
+        
+        // Load the header and add the visible class to about-content
+        loadHeader();
+        document.querySelector('.about-content').classList.add('visible');
+    });
+</script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <div class="content">
+      
+    <div class="content-sub1">
+            <div class="profile-icon1" style="margin-top: 100px;">
+              &nbsp;DEVLOPMENT IS IN PROGRESS
+            </div>
+            
+
+              </div>
+          </div>
+         
+      
+  
+</body>
+</html>

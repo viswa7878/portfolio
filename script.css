@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .headertab
@@ -12,7 +13,7 @@
   display: flex;
   position: fixed; /* Keep the header fixed */
   top: 0; /* Ensure it is at the top */
-  z-index: 1000; 
+  z-index: 10000; 
 }
 .nav-bar
 {
@@ -307,7 +308,7 @@ p {
   font-family: 'Font Awesome\ 5 Free';
 }
 .experience .left {
-  left: 44px;
+  left: 114px;
 }
 .experience .right {
   left: 50%;
@@ -325,6 +326,12 @@ p {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f68c09;
 }
+  .small-tabs a {
+    text-decoration: none;
+    color: black;
+    
+  }
+
 /* arrows pointing left  */
 .experience .right::before {
   content: " ";
@@ -391,11 +398,33 @@ p {
   font-size: 1.5rem;
   transition: 0.3s;
 }
+
 .morebtn .btn:hover{
   background: #1a047e;
 }
 .morebtn .btn:hover i {
   transform: translateX(-8px);
+}
+
+@media(min-width:769px){
+  .nav-bar
+  {
+    margin-left: 12%;
+    width: 100%;
+    display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  justify-content: space-evenly;
+  
+  }
+  
+  .nav-bar a{
+  font-size:100% ;
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  }
 }
 @media(max-width:768px){
   
@@ -418,7 +447,7 @@ p {
     text-align: center;
     border-bottom: 1px solid red;
   }
-
+  
   #menu {
     margin-left: 72%;
     display: block; /* Show menu icon on small screens */
@@ -485,3 +514,123 @@ p {
       }
   
   }
+
+  .project_container {
+    background-color: #081737e3;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling for overflow */
+  }
+  
+  .pr_container {
+    height: auto; /* Adjust to content height */
+    width: 90%; /* Add responsiveness */
+    max-width: 1200px; /* Restrict to a maximum width */
+    margin: 0 auto; /* Center content horizontally */
+  }
+  
+  .head_heading {
+    padding: 10px;
+    font-size: 2.5rem; /* Increased for better visibility */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; /* Center-align boxes */
+    padding: 20px; /* Provide breathing room */
+  }
+  
+  .box-container .box {
+    flex: 1 1 calc(33% - 2rem); /* Three columns */
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box-container .box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .box-container .box .content1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    transition: top 0.3s ease;
+  }
+  
+  .box-container .box:hover .content1 {
+    top: 15%;
+  }
+  
+  .box-container .box .content1 .tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    background: #ffd900;
+  }
+  
+  .box-container .box .content1 .tag h3 {
+    font-size: 2rem;
+  }
+  
+  .desc {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .desc p {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .desc .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .desc .btns .btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #0c0c0c;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .desc .btns .btn:hover {
+    background: #310ae0f5;
+    transform: scale(1.05);
+  }
+  
